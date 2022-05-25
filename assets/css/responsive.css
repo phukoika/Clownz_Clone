@@ -11,6 +11,10 @@
         display: none;
     }
 
+    .navigation__res {
+        display: block;
+    }
+
     .nav__list {
         display: none;
     }
@@ -29,7 +33,8 @@
 
 @media (min-width: 769px){
     .header__nav-btn,
-    .header__right-icon{
+    .header__right-icon,
+    .navigation__res{
         display: none !important;
     }
 }

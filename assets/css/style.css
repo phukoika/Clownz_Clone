@@ -34,33 +34,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* FONTS */
-@font-face {
-    font-family: SVN-Gotham;
-    src: url('/assets/fonts/font-text/gothambook.ttf');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: SVN-Gotham;
-    src: url('/assets/fonts/font-text/gothammedium.ttf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: SVN-Gotham;
-    src: url('/assets/fonts/font-text/gothambold.ttf');
-    font-weight: 700;
-}
-
-
 /* HEADER */
 
 .header {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
     background-color: #fff;
 }
 
@@ -188,17 +164,17 @@ html {
 }
 
 .nav__item-list {
-    
     display: none;
     width: 200px;
     background-color: #fff;
     list-style: none;
     position: absolute;
-    right: -50px;
+    right: -30px;
     text-align: left;
     border-radius: 0;
     padding-left: 0;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    animation: modalFadeIn ease 0.5s;
 }
 
 .nav__item-lv2 {
@@ -222,8 +198,99 @@ html {
     display: block;
 }
 
+/* NAVIGATION RESPONSIVE */
 
+/* carousel slide */
+.carousel {
+    margin-top: 145px;
+}
 
+.carousel__control-prev {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    height: 46px;
+    width: 46px;
+    background-color: #fff;
+    color:#1c1c1c;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.carousel__control-next {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    height: 46px;
+    width: 46px;
+    background-color: #fff;
+    color:#1c1c1c;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
 
+.carousel__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
 
+.carousel-indicators button {
+    height: 5px !important;
+    width: 7px !important;
+    margin: 0 3px !important;
+}
+
+.carousel-indicators .active {
+    width: 22px !important;
+    height: 5px !important;
+    background-color: #dc4e3f !important;
+}
+/* SLIDER */
+/* .section {
+    position: relative;
+}
+
+.slider {
+    margin-top: 145px;
+    padding-top: 25%;
+    background: url(/assets/img/product/slider/slider1.webp) center / cover no-repeat;
+}
+
+.slider__title {
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px;
+    flex-flow: column;
+    text-align: left;
+    position: absolute;
+    top: 5%;
+}
+
+.slider__title h1 {
+    font-size: 2.6rem;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #fff;
+} */
+
+/* PRODUCT 1*/

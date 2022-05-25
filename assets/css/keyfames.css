@@ -1,0 +1,29 @@
+@font-face {
+    font-family: SVN-Gotham;
+    src: url('/assets/fonts/font-text/gothambook.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SVN-Gotham;
+    src: url('/assets/fonts/font-text/gothammedium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: SVN-Gotham;
+    src: url('/assets/fonts/font-text/gothambold.ttf');
+    font-weight: 700;
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
