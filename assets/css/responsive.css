@@ -70,7 +70,9 @@
     .owl-next {
         right: -5px;
     }
-
+    .carousel {
+        margin-top: 50px !important;
+    }
 }
 
 
