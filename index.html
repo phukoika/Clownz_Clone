@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLOWNZ STREETWEAR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Carousel Theme CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/keyfames.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
 </head>
 <body>
     <header class="header fixed-top">
@@ -21,13 +27,13 @@
                         <span>Hotline đặt hàng:</span>
                         <a href="tel:+0934399176">0934399176</a>
                     </div>
-                    <div class="header__nav-btn">
+                    <label for="nav-input-res" class="header__nav-btn">
                         <i class="fa-solid fa-bars"></i>
-                    </div>
+                    </label>
                 </div>
                 <div class="col-sm-4 col-md-4 col-4 text-center">
                     <div class="logo">
-                        <a href="#">
+                        <a href="/index.html">
                             <img  src="./assets/img/header/logo.webp" alt="">
                         </a>
                     </div>
@@ -58,13 +64,13 @@
         <div class="container navigation">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#">z-bot capsule</a>
+                    <a href="/product1.html">z-bot capsule</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">young/wild n' trippy</a>
+                    <a href="/product2.html">young/wild n' trippy</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">top
+                    <a href="/product3.html">top
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul class="nav__item-list">
@@ -86,7 +92,7 @@
                     </ul>
                 </li>
                 <li class="nav__item">
-                    <a href="#">bottom
+                    <a href="/product4.html">bottom
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul class="nav__item-list">
@@ -99,7 +105,7 @@
                     </ul>
                 </li>
                 <li class="nav__item">
-                    <a href="#">accessory
+                    <a href="/product5.html">accessory
                         <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul class="nav__item-list">
@@ -119,15 +125,16 @@
                 </li>
             </ul>
         </div>
+        <input type="checkbox" hidden name="" class="nav__input" id="nav-input-res">     
         <ul class="navigation__res">
             <li class="nav__res-item">
-                <a href="./product1.html">z-bot capsule</a>
+                <a href="/product1.html">z-bot capsule</a>
             </li>
             <li class="nav__res-item">
-                <a href="#">young/wild n' trippy</a>
+                <a href="/product2.html">young/wild n' trippy</a>
             </li>
             <li class="nav__res-item">
-                <a href="#">top
+                <a href="/product3.html">top
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="nav__res-item-list">
@@ -149,7 +156,7 @@
                 </ul>
             </li>
             <li class="nav__res-item">
-                <a href="#">bottom
+                <a href="/product4.html">bottom
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="nav__res-item-list">
@@ -162,7 +169,7 @@
                 </ul>
             </li>
             <li class="nav__res-item">
-                <a href="#">accessory
+                <a href="/product5.html">accessory
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <ul class="nav__res-item-list">
@@ -180,7 +187,14 @@
                     </li>
                 </ul>
             </li>
-        </ul>
+            <li class="nav__res-item">
+                <a href="#">Đăng Nhập</a>
+            </li>
+            <li class="nav__res-item">
+                <a href="#">Đăng Ký</a>
+            </li>
+        </ul>  
+        <label for="nav-input-res" class="nav__overlay"></label>  
     </header>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -207,34 +221,909 @@
           </span>
           <span class="visually-hidden">Next</span>
         </div>
-    </div>
-<!-- 
-    PRODUCT
-    <section class="section">
-        <div class="slider">
-
-        </div>
+    </div>  
+    <section class="section-1">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <div class="slider__title">
-                        <h1>z-bot capsule</h1>
+                <div class="col-md-12">
+                    <div class="section1__product">
+                        <div class="section__head text-center">
+                            <a href="">new arrival</a>
+                            <div class="viewall-cart">
+                                <a href="">top</a>
+                                <a href="">bottom</a>
+                                <a href="">accessory</a>
+                            </div>
+                        </div>
+                        <strong>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/1.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/1-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS 5</h3>
+                                            <h2
+                                             class="text-center">BASIC FOR LIFE T-SHIRT</h2>
+                                            <h5 class="text-center">299.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/2.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/2-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TÚI CHÉO</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ UTILITY CROSSBAG</h2>
+                                            <h5 class="text-center">449.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/3.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/3-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">CAPS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ C LETTER CAP</h2>
+                                            <h5 class="text-center">299.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/4.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/4-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">C LETTER T-SHIRT</h2>
+                                            <h5 class="text-center">379.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/5.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/5-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">READY FOR BAD TRIP T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/6.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/6-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ GOOD VIBE T-SHIRT</h2>
+                                            <h5 class="text-center">379.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/7.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/7-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">SƠ MI & FLANNEL SHIRTS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ LEOPARD SHIRT</h2>
+                                            <h5 class="text-center">399.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/8.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/8-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">SHORTS & TRUNKS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ LEOPARD PANTS</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/9.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/9-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">BIG KARMA T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/10.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/10-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">Z-BOT ICON T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </strong>
+                        <div class="product__button">
+                            <a href="#"><span>XEM TẤT CẢ . NEW ARRIVAL</span></a>
+                          </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>  
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-xs-12 section__banner">
+                <div class="product__banner">
+                    <img src="./assets/img/banner/banner1.webp" alt="">
+                </div>
+                <div class="product__banner-content">
+                    <h3>TOP</h3>
+                    <a href="">Xem thêm</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xs-12 section__banner">
+                <div class="product__banner">
+                    <img src="./assets/img/banner/banner2.webp" alt="">
+                </div>
+                <div class="product__banner-content">
+                    <h3>BOTTOM</h3>
+                    <a href="">Xem thêm</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xs-12 section__banner">
+                <div class="product__banner">
+                    <img src="./assets/img/banner/banner3.webp" alt="">
+                </div>
+                <div class="product__banner-content">
+                    <h3>ACCESSORY</h3>
+                    <a href="">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section1__product">
+                        <div class="section__head text-center">
+                            <a href="">top</a>
+                            <div class="viewall-cart">
+                                <a href="">T-shirt</a>
+                                <a href="">Shirt</a>
+                                <a href="">Hoodie</a>
+                                <a href="">Jacket</a>
+                                <a href="">Sweatshity</a>
+                            </div>
+                        </div>
+                        <strong>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/1.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/1-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">BASIC FOR LIFE T-SHIRT</h2>
+                                            <h5 class="text-center">299.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/4.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/4-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">C LETTER T-SHIRT</h2>
+                                            <h5 class="text-center">379.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/top/3.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/top/3-3.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ SKULL T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            Best Seller
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/6.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/6-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ GOOD VIBE T-SHIRT</h2>
+                                            <h5 class="text-center">379.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/5.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/5-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">READY FOR BAD TRIP T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/9.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/9-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">BIG KARMA T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/7.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/7-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">SƠ MI & FLANNEL SHIRTS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ LEOPARD SHIRT</h2>
+                                            <h5 class="text-center">399.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/8.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/8-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">SHORTS & TRUNKS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ LEOPARD PANTS</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/new_arrival/10.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/new_arrival/10-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TEES & POLO SHIRTS</h3>
+                                            <h2
+                                             class="text-center">Z-BOT ICON T-SHIRT</h2>
+                                            <h5 class="text-center">349.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </strong>
+                        <div class="product__button">
+                            <a href="#"><span>XEM TẤT CẢ . TOP</span></a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section1__product">
+                        <div class="section__head text-center">
+                            <a href="">bottom</a>
+                            <div class="viewall-cart">
+                                <a href="">pants</a>
+                                <a href="">Jeans & Denim</a>
+                            </div>
+                        </div>
+                        <strong>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/1.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/1-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ RACING FLAMES JEANS</h2>
+                                            <h5 class="text-center">649.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            Hot
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/2.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/2-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ RACING FLAMES WIND PANTS</h2>
+                                            <h5 class="text-center">399.000₫</h5>
+                                        </div>
+                                        <!-- <span class="product__tag">
+                                            New Arrival
+                                        </span> -->
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/3.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/3-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">FINISH LINE TRACK PANTS</h2>
+                                            <h5 class="text-center">449.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            Best Seller
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/4.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/4-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ CARGO PANTS</h2>
+                                            <h5 class="text-center">399.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            Best Seller
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/5.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/5-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ JOGGER CARGO PANTS</h2>
+                                            <h5 class="text-center">499.000₫</h5>
+                                        </div>
+                                        <!-- <span class="product__tag">
+                                            New Arrival
+                                        </span> -->
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/6.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/6-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CORDUROY WORK PANTS</h2>
+                                            <h5 class="text-center">499.000₫</h5>
+                                        </div>
+                                        <!-- <span class="product__tag">
+                                            New Arrival
+                                        </span> -->
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/7.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/7-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ GRAFFITI TAG PANTS</h2>
+                                            <h5 class="text-center">549.000₫</h5>
+                                        </div>
+                                        <!-- <span class="product__tag">
+                                            New Arrival
+                                        </span> -->
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/8.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/8-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">PANTS & JEANS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ STRAIGHT PANTS</h2>
+                                            <h5 class="text-center">499.000₫</h5>
+                                        </div>
+                                        <!-- <span class="product__tag">
+                                            New Arrival
+                                        </span> -->
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </strong>
+                        <div class="product__button">
+                            <a href="#"><span>XEM TẤT CẢ . BOTTOM</span></a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section1__product">
+                        <div class="section__head text-center">
+                            <a href="">accessory</a>
+                            <div class="viewall-cart">
+                                <a href="">bag</a>
+                                <a href="">hat</a>
+                                <a href="">Backpack</a>
+                                <a href="">Others</a>
+                            </div>
+                        </div>
+                        <strong>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/accessory/1.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/accessory/1-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TÚI CHÉO</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ UTILITY CROSSBAG</h2>
+                                            <h5 class="text-center">449.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/accessory/2.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/accessory/2-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">CAPS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ C LETTER CAP</h2>
+                                            <h5 class="text-center">299.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/accessory/3.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/accessory/3-2.webp" alt=" ">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">CAPS</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ SPORTY CAP</h2>
+                                            <h5 class="text-center">299.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/accessory/4.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/accessory/4-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">CAPS</h3>
+                                            <h2
+                                             class="text-center">SMILE FACE CAP V2</h2>
+                                            <h5 class="text-center">249.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            Best Seller
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/accessory/5.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/accessory/5-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">BACKPACK</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ X SGG BACKPACK</h2>
+                                            <h5 class="text-center">650.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            Hot
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/accessory/6.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/accessory/6-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">BACKPACK</h3>
+                                            <h2
+                                             class="text-center">ZZ MONOGRAM BACKPACK</h2>
+                                            <h5 class="text-center">649.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/7.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/7-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">BACKPACK</h3>
+                                            <h2
+                                             class="text-center">LAUGH NOW WORLDZ BACKPACK</h2>
+                                            <h5 class="text-center">549.000₫</h5>
+                                        </div>
+                                        <span class="product__tag">
+                                            New Arrival
+                                        </span>
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="product__card">
+                                        <div class="product__card-img">
+                                            <img src="./assets/img/product/bottom/8.webp" alt="">
+                                            <img class="product__card-img2" src="./assets/img/product/bottom/8-2.webp" alt="">
+                                        </div>
+                                        <div class="product__card-body">
+                                            <h3 class="text-center">TÚI CHÉO</h3>
+                                            <h2
+                                             class="text-center">CLOWNZ UTILITY SATCHEL</h2>
+                                            <h5 class="text-center">499.000₫</h5>
+                                        </div>
+                                        <!-- <span class="product__tag">
+                                            New Arrival
+                                        </span> -->
+                                        <div class="product__card-action">
+                                            <a href="">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </strong>
+                        <div class="product__button">
+                            <a href="#"><span>XEM TẤT CẢ . BOTTOM</span></a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="blogs">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center">
+                    <a href="">
+                        CLOWNZ
+                        <strong>NEW COLLECTION</strong>
+                    </a>
+                </h2>
+                <div class="col-md-4 col-sm-4 col-sm-12 blogs__item">
+                    <a href="">
+                        <div class="blogs__img">
+                            <img class="img-responsive center-block" src="./assets/img/footer/1.webp" alt="">
+                        </div>
+                        <h3 class="blogs__title">
+                            𝐂𝐥𝐨𝐰𝐧𝐙 𝐱 𝐒𝐚𝐢𝐠𝐨𝐧 𝐒𝐰𝐚𝐠𝐠𝐞𝐫 𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧
+                        </h3>
+                        <p class="hidden-xs">
+                            Sau những ngày tháng ủ ê vì giãn cách,  ClownZ Streetwear  và  Saigon Swagger  đã quay trở lại đường đua c...
+                        </p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-sm-12 blogs__item">
+                    <a href="">
+                        <div class="blogs__img">
+                            <img class="img-responsive center-block" src="./assets/img/footer/2.webp" alt="">
+                        </div>
+                        <h3 class="blogs__title">
+                            ClownZ x Rap Nhà Làm | Homemade Rapper Collection
+                        </h3>
+                        <p class="hidden-xs">
+                            Mang trong mình tình cảm đặc biệt với văn hóa đường phố, tinh thần support-local-artist cùng mong muốn góp...
+                        </p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-sm-12 blogs__item">
+                    <a href="">
+                        <div class="blogs__img">
+                            <img class="img-responsive center-block" src="./assets/img/footer/3.webp" alt="">
+                        </div>
+                        <h3 class="blogs__title">
+                            WOWY x CLOWNZ
+                        </h3>
+                        <p class="hidden-xs">
+                            Rapper Wowy Nguyễn trong collection mới nhất của ClownZ Streetwear. Đây cũng là vinh dự khi ClownZ trở thà...
+                        </p>
+                    </a>
+                </div>
+                <div class="product__button">
+                    <a href="#"><span>XEM TẤT CẢ</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    
+    <footer class="footer"></footer>
 
 
 
 
 
 
-
-
+<!-- Bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- Jquery Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Owl Carousel Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- JS -->
+    <script src="./javascript.js"></script>
 </body>
 </html>
