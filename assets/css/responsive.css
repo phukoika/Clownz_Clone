@@ -71,7 +71,7 @@
         right: -5px;
     }
     .carousel {
-        margin-top: 50px !important;
+        /* margin-top: 50px !important; */
     }
 }
 
@@ -109,6 +109,10 @@
     }
 
     .blogs .hidden-xs {
+        display: none;
+    }
+
+    .sort {
         display: none;
     }
 }

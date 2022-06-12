@@ -13,7 +13,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
+    <input type="checkbox" hidden name="" id="check__search">
+    <label class="overlay" for="check__search"></label>
     <header class="header fixed-top">
+        <div class="header__search row">
+            <div class="col-2 col-sm-2 col-md-4"></div>
+            <div class="col-8 col-sm-8 col-md-4">
+                <div class="header__search-input">
+                    <input type="text" placeholder="Bạn cần tìm gì hôm nay?">
+                    <label for="check__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 col-md-4">
+                <label for="check__search" class="header__search-out">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+        </div>
         <div class="container">
             <div class="row header__top">
                 <div class="col-sm-4 col-md-4 col-4">
@@ -38,19 +56,20 @@
                             Giỏ hàng
                             <i class="fa-solid fa-cart-arrow-down"></i>
                             <span class="header__top-icon-count">0</span>
+                            <div class="no__cart">Không có sản phẩm nào trong giỏ hàng.</div>
                         </li>
-                        <li class="header__top-icon">
+                        <label for="check__search" class="header__top-icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </li>
+                        </label>
                     </ul>
                     <ul class="header__right-icon">
                         <li>
                             <i class="fa-solid fa-cart-arrow-down"></i>
                             <span class="header__top-icon-count">0</span>
                         </li>
-                        <li>
+                        <label for="check__search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </li>
+                        </label>
                     </ul>
                 </div>
             </div>
@@ -119,64 +138,70 @@
                 </li>
             </ul>
         </div>
-        <input type="checkbox" hidden name="" class="nav__input" id="nav-input-res">     
+        <input type="checkbox" hidden name="" class="nav__input" id="nav-input-res"> 
         <ul class="navigation__res">
-            <li class="nav__res-item ">
+            <li class="nav__res-item">
                 <a href="/product1.html">z-bot capsule</a>
             </li>
-            <li class="nav__res-item ">
+            <li class="nav__res-item">
                 <a href="/product2.html">young/wild n' trippy</a>
             </li>
-            <li class="nav__res-item active">
-                <a href="/product3.html">top
-                    <i class="fa-solid fa-angle-down"></i>
+            <li class="nav__res-item">
+                <a href="#">top
+                    <label for="dropdown__menu-icon">
+                        <i class="fa-solid fa-angle-down dropdown__btn"></i>
+                    </label>
                 </a>
-                <ul class="nav__res-item-list">
-                    <li class="nav__res-item-lv2">
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu-item">
                         <a href="#">T-Shirt</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Shirt</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Hoodie</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Jacket</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Sweatshirt</a>
                     </li>
                 </ul>
             </li>
             <li class="nav__res-item">
-                <a href="/product4.html">bottom
-                    <i class="fa-solid fa-angle-down"></i>
+                <a href="#">bottom
+                    <label for="dropdown__menu-icon">
+                        <i class="fa-solid fa-angle-down dropdown__btn"></i>
+                    </label>
                 </a>
-                <ul class="nav__res-item-list">
-                    <li class="nav__res-item-lv2">
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu-item">
                         <a href="#">Pants</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Jeans & Denim</a>
                     </li>
                 </ul>
             </li>
             <li class="nav__res-item">
-                <a href="/product5.html">accessory
-                    <i class="fa-solid fa-angle-down"></i>
+                <a href="#">accessory
+                    <label for="dropdown__menu-icon">
+                        <i class="fa-solid fa-angle-down dropdown__btn"></i>
+                    </label>
                 </a>
-                <ul class="nav__res-item-list">
-                    <li class="nav__res-item-lv2">
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menu-item">
                         <a href="#">Bag</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Hat</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Backpack</a>
                     </li>
-                    <li class="nav__res-item-lv2">
+                    <li class="dropdown__menu-item">
                         <a href="#">Others</a>
                     </li>
                 </ul>
@@ -190,6 +215,33 @@
         </ul>  
         <label for="nav-input-res" class="nav__overlay"></label>  
     </header>
+    <div class="slider slider3">
+        <div class="container">
+            <h1 class="slider__title">
+                TOP
+            </h1>
+        </div>
+    </div>
+    <div class="sort container">
+        <h3>Xếp theo:</h3>
+        <ul class="sort__list">
+            <li class="sort__item">
+                <i></i>
+                Tên A-Z</li>
+            <li class="sort__item">
+                <i></i>
+                Tên Z-A</li>
+            <li class="sort__item">
+                <i></i>
+                Hàng mới</li>
+            <li class="sort__item">
+                <i></i>
+                Giá thấp đến cao</li>
+            <li class="sort__item">
+                <i></i>
+                Giá cao xuống thấp</li>
+        </ul>
+    </div>
 
 
 

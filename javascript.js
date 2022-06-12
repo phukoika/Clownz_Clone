@@ -26,11 +26,12 @@ $('.stop').on('click',function(){
 })
 
 
-// function onHover()
-//     {
-//         $("#product__card-img").attr('src', './assets/img/product/new_arrival/1.2.webp');
-//     }
+// DROP MENU SIDEBAR
+const dropMenu = document.querySelectorAll('.dropdown__menu');
+const dropBtn = document.querySelectorAll('.dropdown__btn');
 
-// function offHover()
-//     {
-//         $("#product__card-img").attr('src', './assets/img/product/new_arrival/bt1.webp');
+dropBtn.forEach(function(btn, i) {
+    dropBtn[i].addEventListener('click', () => {
+        dropMenu[i].classList.toggle('active')
+    })
+})
