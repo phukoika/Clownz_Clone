@@ -39,7 +39,7 @@ html {
     background-color: #fff;
     transform: translateY(-76px);
     transition: all linear 0.2s;
-    /* z-index: 999999999; */
+    z-index: 999999999;
 }
 
 .header__search {
@@ -403,7 +403,6 @@ html {
 
 /* carousel slide */
 .carousel {
-    /* margin-top: 145px; */
     margin-bottom: 40px;
 }
 
@@ -462,10 +461,6 @@ html {
 }
 
 /* SECTION 1 */
-
-.section1__product {
-    /* padding: 40px 0 20px 0; */
-}
 
 .section__head {
     margin-bottom: 30px;
@@ -898,7 +893,8 @@ html {
 /* SORT */
 
 .sort {
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     font-size: 1.4rem;

@@ -1,0 +1,24 @@
+/* PAGE PRODUCT 1 CSS */
+
+.pr2__section .product__card-img img {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.pr2__section .product__card  {
+    position: relative;
+}
+
+.pr2__section .product__card-action {
+    top: 400px;
+    z-index: -999;
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.pr2__section .product__card:hover .product__card-action {
+    top: 300px;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+}
