@@ -73,6 +73,9 @@
     .carousel {
         /* margin-top: 50px !important; */
     }
+    .slider {
+        margin-top: 50px !important;
+    }
 }
 
 
@@ -132,6 +135,29 @@
 
     .owl-next {
         right: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .product__card-body h2,
+    .product__card-body h3,
+    .product__card-body h5 {
+        font-size: 1rem;
+    }
+
+    .product__tag {
+        font-size: 10px;
+        height: 16px;
+        line-height: 16px;
+        padding: 0px 8px;
+        top: 5px;
+    }
+    .product__tag.soldout {
+        font-size: 10px !important;
+        height: 16px !important;
+        line-height: 16px !important;
+        padding: 0px 8px !important;
+        top: 5px !important;
     }
 }
 

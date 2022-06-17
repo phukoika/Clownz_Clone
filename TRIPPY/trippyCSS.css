@@ -1,4 +1,8 @@
-/* PAGE PRODUCT 1 CSS */
+/* PAGE PRODUCT 2 CSS */
+
+.pr2__section {
+    margin-top: 36px;
+}
 
 .pr2__section .product__card-img img {
     width: 100%;

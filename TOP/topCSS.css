@@ -1,0 +1,48 @@
+/* PAGE PRODUCT 3 CSS */
+
+.pr3__section {
+    margin-top: 36px;
+}
+
+.pr3__section .product__card-img img {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.pr3__section .product__card  {
+    position: relative;
+}
+
+.pr3__section .product__card-action {
+    top: 400px;
+    z-index: -999;
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.pr3__section .product__card:hover .product__card-action {
+    top: 300px;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+}
+
+.pr3__section .product__tag.soldout {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    background: #916841;
+    position: absolute;
+    top: 30px;
+    z-index: 11;
+    left: 0;
+    font-weight: initial;
+    z-index: 9999;
+}
+
+.product__card-img img.soldout {
+    opacity: 0.3;
+}
