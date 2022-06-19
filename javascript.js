@@ -36,3 +36,21 @@ dropBtn.forEach(function(btn, i) {
     })
 })
 
+// MESSENGER MENU
+const mesBtn = document.querySelector('.mes__btn');
+const menuMes = document.querySelector('.mes__menu');
+const exitIcon = document.querySelector('.fa-minus');
+const menuIcon = document.querySelector('.fa-ellipsis');
+const menuNav = document.querySelector('.mes__menu2');
+
+mesBtn.addEventListener('click', () => {
+    menuMes.classList.toggle('active');
+})
+
+exitIcon.addEventListener('click', () => {
+    menuMes.classList.remove('active');
+})
+
+menuIcon.addEventListener('click', () => {
+    menuNav.classList.toggle('active');
+})
