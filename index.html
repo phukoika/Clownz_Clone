@@ -21,37 +21,7 @@
     
 </head>
 <body>
-    <div class="mes__box">
-        <div class="mes__menu">
-            <div class="mes__item">
-                <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-1/75553037_2631596976876287_5800393482602283008_n.jpg?stp=c87.87.1875.1875a_cp0_dst-jpg_s74x74&_nc_cat=108&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=K5Nl31wXPLMAX-uRX34&_nc_ht=scontent.fhan14-2.fna&oh=00_AT_Xxde6jTlTFmelNlpcnVK6eS4R_uVCjTZ5B48TiEmSTw&oe=62D3B6FC" alt="">
-                <div class="mes__icon">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <i class="fa-solid fa-minus"></i>
-                    <ul class="mes__menu2">
-                        <li class="mes__menu2-item">Truy cập trang Facebook</li>
-                        <li class="mes__menu2-item">Thêm Messenger vào trang web của bạn</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mes__item">
-                <h1 class="text-center pt-3" style="font-size: 1.8rem; font-family: 'SVN-Gotham', sans-serif;">Chat với ClownZ Streetwear</h1>
-            </div>
-            <div class="mes__item">
-                <p style="font-size: 1.6rem;">Xin chào cậu! Mặc dù đây không phải một câu chào xịn ^^</p>
-            </div>
-            <div class="mes__item">
-                <button>Bắt đầu chat</button>
-            </div>
-            <div class="mes__item"><h5 class="text-center mt-3" style="font-size: 1.6rem; width: 100%;">
-                <i class="fa-brands fa-facebook-messenger"></i>
-                Do Messenger cung cấp</h5>
-            </div>
-        </div>
-        <div class="mes__btn">
-            <i class="fa-brands fa-facebook-messenger"></i>
-        </div>
-    </div>
+    <div id="root">
     <input type="checkbox" hidden name="" id="check__search">
     <label class="overlay" for="check__search"></label>
     <header class="header fixed-top">
@@ -1170,6 +1140,7 @@
             </div>
         </div>
     </section>
+    <div id="chatbox"></div>
     
     <footer class="footer">
         <div class="container">
@@ -1278,6 +1249,7 @@
             </div>
         </div>
     </footer>
+    </div>
 
 
 
@@ -1289,8 +1261,18 @@
 <!-- Jquery Cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Owl Carousel Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- JS -->
-    <script src="./javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./javascript.js"></script>
+   
+
+
+
+
+
+
+
+<!-- CHATBOX -->
+    <script src="./chatbox.js"></script>
+<!-- CHATBOX -->
 </body>
 </html>
